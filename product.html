@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <link rel="stylesheet" href="product.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+   <!-------header------->
+    <div class="header">
+      <div id="nav-bar">
+        <img src="img/ckwhite.png" alt="logo" width="125px"  />
+        <nav>
+          <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="#categories" class="nav-link">Products</a></li>
+            <li><a href="cart.html" class="nav-link">Cart</a></li>
+            <li><a href="account.html" class="nav-link">Account</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!----Product Details-------->
+    <div class="container2 product">
+        <div class="row">
+            <div class="col-2">
+                <img src="img/pp1.jpg" width="100%" id="pp1Img">
+               <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="img/pp1.jpg" width="80%" class="smallImg"> 
+                 </div>
+                   <div class="small-img-col">
+                      <img src="img/pp2.jpg" width="100%" class="smallImg"> 
+                   </div>
+                <div class="small-img-col">
+                   <img src="img/pp3.jpg" width="100%" class="smallImg"> 
+                </div>
+                <div class="small-img-col">
+                   <img src="img/pp4.jpg" width="100%" class="smallImg"> 
+                </div>
+            </div> 
+        </div>
+        <div class="col-2">
+            <p><b> Best Seller</b></p>
+            <h1>Modern Cotton Unlined Triangle Bralette</h1>
+            <h4>$89.00</h4>
+            <p style="color:red">Buy Modern Cotton Bra + Panty, Save 15%</p>
+            <select>
+                <option>Select Size</option>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+                <option>XL</option>
+                <option>XXL</option>
+            </select>
+            <input type="number" value="1">
+            <a href="cart.html" class="btn">Add To Cart</a>
+            <h3>About the Product</h3> <br>
+            <p><strong> An updated modern icon, crafted with super soft cotton modal stretch. Cut in a sports bra silhouette, this modern cotton Calvin Klein unlined bralette is made with a signature repeating logo band, triangle cups and convertible styling for low-impact workouts or as an all-day underwear essential.</strong>
+            </p>
+        </div>
+        </div>
+    </div>
+
+    <!--------- Featured Products/ratings --------->
+    <div class="categories">
+      <div id="categories">
+      <div class="container2">
+        <h2 class="title"><b>Related Products</b></h2>
+        <div class="row">
+          <div class="col-3">
+            <img src="img/jen1.jpg" width="340px" height="400px" />
+            <h4>Collection 1</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+            </div>
+            <p>$69.00</p>
+          </div>
+          <div class="col-3">
+            <img src="img/jen3.jpg" width="340px" height="400px" />
+            <h4>Collection 2</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <p>$89.00</p>
+          </div>
+          <div class="col-3">
+            <img src="img/jen2.1.jpg" width="340px" height="400px" />
+            <h4>Collection 3</h4>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <p>$79.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----Footer----->
+    <div class="footer">
+      <div class="container3">
+        <div class="row">
+          <div class="footer-col-1">
+            <ul>
+              <li>Gift Cards</li>
+              <li>Store Directory</li>
+              <li>Afterpay</li>
+              <li>Loyalty Program</li>
+              <li>Klarna</li>
+            </ul>
+          </div>
+          <div class="footer-col-2">
+            <ul>
+              <li>FAQs</li>
+              <li>Order Status</li>
+              <li>Returns</li>
+              <li>Shipping</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+          <div class="footer-col-3">
+            <ul>
+              <li>About Calvin Klein</li>
+              <li>Careers</li>
+              <li>Explore</li>
+              <li>Calvin Klein Jeans</li>
+              <li>Campaigns</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow Us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>Pinterest</li>
+              <li>Youtube</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----js----->
+    <script>
+        const pp1Img = document.getElementById("pp1Img");
+       const smallImg = document.getElementsByClassName("smallImg");
+    
+        smallImg[0].onclick = function()
+        {
+            pp1Img.src = smallImg[0].src
+        }
+        smallImg[1].onclick = function()
+        {
+            pp1Img.src = smallImg[1].src
+        }
+        smallImg[2].onclick = function()
+        {
+            pp1Img.src = smallImg[2].src
+        }
+        smallImg[3].onclick = function()
+        {
+            pp1Img.src = smallImg[3].src
+        }
+        </script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+$dirty: #E0E1E4;
+$font:'Roboto Flex', sans-serif;
+@import "sass/featured";
+@import "sass/header";
+@import "sass/footer";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $dirty;
+    background-size: cover;
+    font-family: $font;
+}
+.container4{
+    max-width: 100%;
+    margin: auto;
+    margin-top: 80px;
+    padding-left: 25px;
+    padding-right: 23px;
+    background: $dirty;
+    padding-top: 80px;
+    font-family: 'Roboto', sans-serif;
+}
+.cart-page{
+    margin: 80px auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+} 
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: $dirty;
+    background-color: black;
+    font-weight: normal;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+td a{
+    color: red;
+    font-size: 12px;
+}
+td img{
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+}
+.cart-info div{
+    margin-top: 30px;
+}
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+.total-price table{
+    border-top: 2px solid black;
+    width: 100%;
+    max-width: 400px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}

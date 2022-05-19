@@ -1,0 +1,27 @@
+$dirty: #E0E1E4;
+$black: #0e1111;
+$font:'Roboto Flex', sans-serif;
+@import "sass/header";
+@import "sass/featured";
+@import "sass/footer";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $dirty;
+    font-family: $font;
+}
+.video{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  margin-top: 5%;
+}
+/*Product Css*/
+

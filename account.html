@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Page</title>
+    <link rel="stylesheet" href="account.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-------header--------->
+    <div class="header">
+      <div id="nav-bar">
+        <img src="img/ckwhite.png" alt="logo" width="125px" />
+        <nav>
+          <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="product.html" class="nav-link">Products</a></li>
+            <li><a href="cart.html" class="nav-link">Cart</a></li>
+            <li><a href="#order" class="nav-link">Account</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!------header end-------->
+    <!------account--------->
+    <div class="account-page">
+      <div class="container2">
+        <div class="row">
+          <div class="col-2">
+            <img src="img/jeno.jpg" width="100%" />
+          </div>
+          <div class="col-2">
+            <div class="form-container">
+              <div class="form-btn">
+                <span onclick="login()">Login</span>
+                <span onclick="register()">Register</span>
+                <hr id="indicator" />
+              </div>
+              <form id="loginform">
+                <input type="text" placeholder="Username" />
+                <input type="password" placeholder="Password" />
+                <button type="submit" class="btn">Login</button>
+                <a href="" style="color: black">Forgot password</a>
+              </form>
+                <form id="regform" action="thankyou.html" method="get">
+                  <input
+                    type="Username"
+                    name="Username"
+                    id="Username"
+                    placeholder="Username"
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="JennieKim123@gmail.com"
+                  />
+                  <input type="password" placeholder="Password" />
+
+                  <button type="submit" class="btn" input type="submit">
+                    Register Now
+                  </button>
+                </form>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----Footer----->
+    <div class="footer">
+      <div class="container3">
+        <div class="row">
+          <div class="footer-col-1">
+            <ul>
+              <li>Gift Cards</li>
+              <li>Store Directory</li>
+              <li>Afterpay</li>
+              <li>Loyalty Program</li>
+              <li>Klarna</li>
+            </ul>
+          </div>
+          <div class="footer-col-2">
+            <ul>
+              <li>FAQs</li>
+              <li>Order Status</li>
+              <li>Returns</li>
+              <li>Shipping</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+          <div class="footer-col-3">
+            <ul>
+              <li>About Calvin Klein</li>
+              <li>Careers</li>
+              <li>Explore</li>
+              <li>Calvin Klein Jeans</li>
+              <li>Campaigns</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow Us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>Pinterest</li>
+              <li>Youtube</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----footer end------>
+    <script>
+      const loginform = document.getElementById("loginform");
+      const regform = document.getElementById("regform");
+      const indicator = document.getElementById("indicator");
+
+      function register() {
+        regform.style.transform = "translateX(0px)";
+        loginform.style.transform = "translateX(0px)";
+        indicator.style.transform = "translateX(100px)";
+      }
+
+      function login() {
+        regform.style.transform = "translateX(300px)";
+        loginform.style.transform = "translateX(300px)";
+        indicator.style.transform = "translateX(0px)";
+      }
+    </script>
+  </body>
+</html>
